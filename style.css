@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.navbar{
+    height: 65px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.nav_left img{
+    height: 55px;
+}
+
+.nav_left h2{
+    color: #289c19;
+}
+
+.nav_right ul {
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: #252525;
+}
+
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 30px;
+  
+  }
+  
+  li > a {
+    color: #252525;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #289c19;
+  }
+
+  .nav_right i{
+    display: none;
+  }
+
+  /* about starts here */
+.abt{
+    position: relative; 
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.abt::before{
+    content: "";
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/688/1001/281/coding-developer-quotes-technology-wallpaper-preview.jpg');
+      background-size: cover;
+      position: absolute;
+      background-position: center;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.16;
+}
+
+  .abt_left{
+    margin: 100px;
+  }
+  .abt_left h1{
+    font-size: 3rem;
+  }
+
+  .abt_left span{
+    color: #289c19;
+  }
+
+  .abt_left a{
+    text-decoration: none;
+  }
+
+  .button{
+    display: inline-block;
+    background-color: #289c19;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    margin: 40px 0px;
+  }
+
+  .abt_right{
+    padding: 50px;
+  }
+  
+
+ 
+
+  @media screen and (max-width: 768px){
+    
+body{
+    width: 100vw;
+}
+
+    .nav_right ul{
+        display: none;
+    }
+
+    .nav_right i{
+        display: block;
+        font-size: 18px;
+        margin: 0px 15px;
+    }
+
+    .nav_right{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .nav_left{
+        margin-left: 12px;
+        gap: 5px;
+    }
+
+    .nav_left img{
+        height: 45px;
+    }
+
+    .nav_left h2{
+        font-size: 23px;
+    }
+
+    .abt{
+        height: 68vh;
+    }
+
+    .abt_left{
+        margin: 0px 10px 0px 20px;
+
+    }
+
+    .abt_left h1{
+        font-size: 2rem;
+    }
+
+    .abt_left h3{
+        font-size: 1rem;
+    }
+
+    .abt_right{
+        display: none;
+    }
+    
+
+    .abt::before{
+        opacity: 0.12;
+    }
+
+  }
+
+
