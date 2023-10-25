@@ -149,10 +149,34 @@ li {
 
   .sample{
    
-    background-color: #F8F8F8;
+    background-color: #f0efef;
     height: max-content;
+    border-radius: 0px 0px 30px 30px;
   }
   
+
+  .web{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .head{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .head p{
+    font-weight: 600;
+    color: black;
+    margin-right: 15rem;
+  }
+
+  .head h1{
+    font-size: 2rem;
+    font-weight: 600;
+  }
 
   footer{
     height: max-content;
@@ -234,6 +258,17 @@ width: 100%;
 
     .abt::before{
         opacity: 0.12;
+    }
+
+    .head{
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+
+    .head p{
+      margin-right: 0rem;
+      text-align: right;
+      margin-top: 20px;
     }
 
     footer{
